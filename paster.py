@@ -4,9 +4,9 @@ import re
 import os
 
 def Pastebin_search(search,object):#this function provide search on psbdmp
-""" search = string, subject of the search
-    object = string, the object to search
-    Data = dict, contain all the API response """
+    #search = string, subject of the search
+    #object = string, the object to search
+    #Data = dict, contain all the API response
         try:
             url="https://psbdmp.ws/api/search/{}/{}".format(search,object)#formatage de la requete api
             response = requests.get(url)
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     print("|   ___/  /  /_\  \       \   \       |  |     |   __|  |      /")
     print("|  |     /  _____  \  .----)   |      |  |     |  |____ |  |\  \----.")
     print("| _|    /__/     \__\ |_______/       |__|     |_______|| _| `._____|")
-    print("credit: Hash-Ill")
+    print("credit: Hash-ill")
     print("Please avoid to use it for an offensive purpose.")
     parser = argparse.ArgumentParser()
     parser.add_argument("-e", "--email", help="To search for an email on psbdmp")
