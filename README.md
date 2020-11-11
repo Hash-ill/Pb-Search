@@ -1,4 +1,4 @@
-# Paster
+# Pb-Leak
 Simple OSINT command line tool for pastebin
 
 # Description
