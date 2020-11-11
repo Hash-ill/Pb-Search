@@ -18,10 +18,7 @@ First, install packages:
 
 Then,to know the different options:
 
-```#python3 paster.py -h
-
-
-
+```#python3 Pb-Leak.py -h
 .______   .______           __       _______     ___       __  ___ 
 |   _  \  |   _  \         |  |     |   ____|   /   \     |  |/  / 
 |  |_)  | |  |_)  |  ______|  |     |  |__     /  ^  \    |  '  /  
