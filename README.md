@@ -8,6 +8,9 @@ We just provide the pastebin url, you have to open url in you browser.
 You can search email, domain or general term.
 Please, be kind, avoid to use it for an offensive purpose.
 
+if you want to see another similar tool in shell that inspired me:
+https://github.com/streaak/pastebin-scraper
+
 # Usage
 
 This tool work under python3.
