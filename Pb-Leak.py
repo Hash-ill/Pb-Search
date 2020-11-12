@@ -15,8 +15,6 @@ def Pastebin_search(search,object):#this function provide search on psbdmp
                 print("nothing found for :"+object+"")
                 exit()
             else:#if informations are found on psbdmp
-                for i in range(len(data['data'])):
-                    print("https://pastebin.com/"+data['data'][i]['id']+"")
                 print('Un leak potentiel existe pour:'+object+'')
                 for i in range(len(data['data'])):
                     print("https://pastebin.com/"+data['data'][i]['id']+"")#display url where the information is found
