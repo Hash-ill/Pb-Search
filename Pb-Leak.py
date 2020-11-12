@@ -3,7 +3,7 @@ import argparse
 import re
 import os
 
-def Pastebin_search(search,object):#this function provide search on psbdmp
+def Pastebin_Search(search,object):#this function provide search on psbdmp
     #search = string, subject of the search
     #object = string, the object to search
     #Data = dict, contain all the API response
