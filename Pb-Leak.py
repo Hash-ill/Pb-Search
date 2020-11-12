@@ -8,7 +8,7 @@ def Pastebin_search(search,object):#this function provide search on psbdmp
     #object = string, the object to search
     #Data = dict, contain all the API response
         try:
-            url="https://psbdmp.ws/api/search/{}/{}".format(search,object)#formatage de la requete api
+            url="https://psbdmp.ws/api/search/{}{}".format(search,object)#formatage de la requete api
             response = requests.get(url)
             data=response.json()#contact api with formated request
             if data['count']==0: #in case of response without data
@@ -52,24 +52,24 @@ if __name__ == '__main__':
     if args.email:
         if re.match(r"[^@]+@[^@]+\.[^@]+", args.email):#verification of email format
             if args.output:
-                Data=Pastebin_search("email",args.email)
+                Data=Pastebin_search("email/",args.email)
                 output(str("Mail"),Data,args.email)
             else:
-                Pastebin_search("email",args.email)
+                Pastebin_search("email/",args.email)
         else:
             print("please enter an email")
     if args.domain:
         if re.match(r"(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]", args.domain):#verification of domain format
             if args.output:
-                Data=Pastebin_search("domain",args.domain)
+                Data=Pastebin_search("domain/",args.domain)
                 output("Domain",Data,args.domain)
             else:
-                Pastebin_search("domain",args.domain)
+                Pastebin_search("domain/",args.domain)
         else:
             print("please enter a domain name")
     if args.general:
         if args.output:
-            Data=Pastebin_search("general",args.general)
+            Data=Pastebin_search("",args.general)
             output(str("general"),Data,args.general)
         else:
-            Pastebin_search("general",args.general)
+            Pastebin_search("",args.general)
