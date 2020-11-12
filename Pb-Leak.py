@@ -3,7 +3,7 @@ import argparse
 import re
 import os
 
-def Pastebin_Search(search,object):#this function provide search on psbdmp
+def Pastebin_search(search,object):#this function provide search on psbdmp
     #search = string, subject of the search
     #object = string, the object to search
     #Data = dict, contain all the API response
@@ -69,7 +69,7 @@ if __name__ == '__main__':
             print("please enter a domain name")
     if args.general:
         if args.output:
-            Data=Pastebin_Search("general",args.general)
+            Data=Pastebin_search("general",args.general)
             output(str("general"),Data,args.general)
         else:
-            Pastebin_Search("general",args.general)
+            Pastebin_search("general",args.general)
