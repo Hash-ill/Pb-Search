@@ -19,7 +19,7 @@ def Pastebin_search(search,object):#this function provide search on psbdmp
                 for i in range(len(data['data'])):
                     print("https://pastebin.com/"+data['data'][i]['id']+"")#display url where the information is found
                 print('Ces informations ne sont pas forcement accessible ')
-                return Data
+                return data
         except Exception as e:
             print("nous avons une erreur lors de la recherche")
 
